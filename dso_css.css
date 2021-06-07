@@ -1,0 +1,52 @@
+/* Estilo de la web DSO */
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(11, 61, 145, 1) 100%);
+    font-family: "Calibri";
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th{
+    color: white;
+    background-color: #00438b;
+}
+
+#actualizar{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.devices{
+    margin-top: 20px;
+}
+
+.nombreSensor td{
+    margin-top: 10px;
+    color: white;
+    background-color: #00438b;
+}
+
+.filtracion{
+    margin-top: 10px;
+}
+
+.data{
+    margin-top: 10px;
+}
+
+.volver{
+    margin-top: 20px;
+}

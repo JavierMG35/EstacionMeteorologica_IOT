@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICA FINAL -Datos-</title>
+    <link rel="stylesheet" type="text/css" href="dso_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="datos.js"></script>
+</head>
+<body>
+    <h1>GRUPO 92</h1>
+    <h2>Tabla de información del dispositvo seleccionado</h2>
+    <div>
+        <input id="actualizar" type="button" onclick="actualizar()" value="ACTUALIZAR VALORES"></input>
+    </div>
+    <h3 class="intro_sensor">Sensor: </h3> <a class="nombreSensor"> </a>
+    <div class="filtracion">
+         Fecha inicial
+         <input type="datetime-local" name="fecha_inicial" id="fecha_inicial" />
+         Fecha final
+        <input type="datetime-local" name="fecha_final" id="fecha_final" />
+        <input type="submit" class="filtro" onclick="get_measures_filtered()" value="Filtrar">
+    </div>
+    <div class="data"></div>
+    <button class="volver" onclick="volver()"> VOLVER </button>
+</body>
+</html>

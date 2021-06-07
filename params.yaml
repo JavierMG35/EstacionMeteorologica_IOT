@@ -1,0 +1,8 @@
+MICROIP: "34.89.189.185"
+MQTTIP: "34.105.236.222" #MQTT-JAVIER
+MQTTUSR: "dso_server"
+MQTTPWD: "dso_server"
+MARIADB_IP: "localhost"
+MARIADB_USR: "iot_user"
+MARIADB_PWD: "iot_password"
+MARIADB_DB: "iot_data"
