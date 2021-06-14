@@ -1,0 +1,45 @@
+services:
+
+ mariaDB: 
+    image: 'mariadb:latest'
+    container_name: mariaDB
+    environment:
+      - MYSQL_ROOT_PASSWORD=iot_password
+ api: 
+    build: ./api
+    container_name: api
+    ports:
+      - '5000:5000'
+    links:
+      - 'mariaDB:mariaDB'
+      - 'mqtt:mqtt'
+    depends_on:
+      - mariaDB
+ subscriber: 
+    build: ./subscriber
+    container_name: subscriber
+    links:
+      - 'api:api'
+      - 'mqtt:mqtt'
+      - 'mariaDB:mariaDB'
+    depends_on:
+      - mqtt
+      - api
+ front: 
+    build: ./front
+    container_name: front
+    ports:
+      - '80:80'
+    volumes:
+      - .:/var/www
+
+ mqtt:
+    build: ./mqtt
+    container_name: mqtt
+    ports:
+      - '1883:1883'
+    volumes:
+      - ./mqtt/app/mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+
+

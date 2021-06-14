@@ -1,0 +1,8 @@
+# MICROIP: "127.0.0.1"
+MQTTIP: "mqtt" #G092-Dockers
+MQTTUSR: "dso_server"
+MQTTPWD: "dso_server"
+MARIADB_IP: "mariaDB"
+MARIADB_USR: "iot_user"
+MARIADB_PWD: "iot_password"
+MARIADB_DB: "iot_data"

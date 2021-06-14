@@ -1,0 +1,4 @@
+MICROIP: "api"
+MQTTIP: "mqtt" #G092-Dockers
+MQTTUSR: "dso_server"
+MQTTPWD: "dso_server"
